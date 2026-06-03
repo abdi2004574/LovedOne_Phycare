@@ -1,0 +1,25 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# SSH Keys
+abdi
+abdi.pub
+
+# Python cache & virtualenvs
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+ENV/
+env/
+
+# Node/Frontend (in case they are built at root or nested)
+node_modules/
+.next/
+dist/
+build/
+.claude/
