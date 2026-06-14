@@ -2,7 +2,7 @@
 Write-Host "Starting LovedOne PsyCare development servers..." -ForegroundColor Cyan
 
 # Start backend in background
-$backend = Start-Process -FilePath "python" -ArgumentList "-m uvicorn app.main:socket_app --reload --port 8000" -WorkingDirectory $PWD -PassThru -WindowStyle Hidden
+$backend = Start-Process -FilePath "python" -ArgumentList "-m uvicorn Backend.main:socket_app --reload --port 8000" -WorkingDirectory $PWD -PassThru -WindowStyle Hidden
 Write-Host "Backend starting on port 8000..." -ForegroundColor Green
 
 # Wait for backend to be ready
